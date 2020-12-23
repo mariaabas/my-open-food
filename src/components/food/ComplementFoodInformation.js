@@ -14,7 +14,7 @@ function ComplementFoodInformation(props) {
 
     return (
         <form>
-            <Grid container spacing={5} direction="row">
+            <Grid container spacing={5}>
                 <Grid item xs={12}>
                     <FormGroup row={true}>
                         <ShoppingBasketIcon/>
