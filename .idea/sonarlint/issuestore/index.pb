@@ -21,3 +21,5 @@ O
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 `
 0src/components/food/ComplementFoodInformation.js,c\5\c52b09581cf3201fc440fd73ada63489289e6036
+V
+&src/components/search/HistorySearch.js,6\9\698070c6f80c0d40aa0e41596465116051599f5f

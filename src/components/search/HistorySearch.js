@@ -1,6 +1,5 @@
 import React from "react";
-import {GridList, GridListTile, GridListTileBar, makeStyles, IconButton } from "@material-ui/core";
-import InfoIcon from '@material-ui/icons/Info';
+import {GridList, GridListTile, GridListTileBar, makeStyles } from "@material-ui/core";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -19,7 +18,7 @@ function HistorySearch(props) {
 
     return (
         <div>
-        <GridList className={classes.gridList} cols={8.5}>
+        <GridList className={classes.gridList} cols={9.5}>
             {props.foodsDetails.map((food) => (
                 <GridListTile key={food.name}>
                     <img src={food.imgUrl} alt={food.name} />

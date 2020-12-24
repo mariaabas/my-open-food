@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Card, CardContent, Typography, CardMedia, CardActions, Collapse, IconButton} from "@material-ui/core";
+import { makeStyles, Card, CardContent, CardMedia, CardActions, Collapse, IconButton} from "@material-ui/core";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import BasicFoodInformation from "./BasicFoodInformation";
 import ComplementFoodInformation from "./ComplementFoodInformation";
@@ -7,7 +7,7 @@ import clsx from 'clsx';
 
 const useStyle = makeStyles((theme) => ({
     root: {
-        maxWidth: 500
+        width: 500
     },
     media: {
         height: 0,

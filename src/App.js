@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import { Grid , AppBar, Toolbar }  from '@material-ui/core';
-import BarCode from './components/BarCode.js';
 import CardFood from "./components/food/CardFood";
 import HistorySearch from "./components/search/HistorySearch";
 import {Alert, AlertTitle} from "@material-ui/lab";
+import AppBarFood from "./components/appBar/AppBarFood";
 
 
 
@@ -36,19 +36,19 @@ function App() {
   }
   return (
     <div>
-      <AppBar className="App-header" position="static" color="transparent">
-          <BarCode onFoodInformation = {(food) => handleCallback(food)}
-                    errorNoCode = {(isShow) => handleError(isShow)}/>
-      </AppBar>
-      { showError && <Alert severity="error">
-        <AlertTitle>{errorTitle}</AlertTitle>
-        {errorMessage}
-      </Alert>
+
+      <AppBarFood handleCallbackAppBar = {(food) => handleCallback(food)}
+                  handleErrorAppBar = {(isShow) => handleError(isShow)}></AppBarFood>
+        { showError && <Alert severity="error">
+          <AlertTitle>{errorTitle}</AlertTitle>
+          {errorMessage}
+        </Alert>
+        }
+      {<Grid container spacing={1} direction="column" alignItems="center" justify="center" style={{marginTop: 30}}>
+        {showCardFood && <Grid> <CardFood food={foodInformation}/> </Grid>}
+      </Grid>
       }
-  { <Grid container spacing={1} direction="column" alignItems="center" justify="center" style={{ marginTop: 30 }}>
-    { showCardFood && <Grid> <CardFood food={foodInformation}/> </Grid> }
-        </Grid>
-  }
+
       {
         showHistorySearch &&
         <Grid direction="row" alignItems="right" justify="center" style={{ marginTop: 30 }}>
