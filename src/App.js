@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Grid , AppBar, Toolbar }  from '@material-ui/core';
+import { Grid }  from '@material-ui/core';
 import CardFood from "./components/food/CardFood";
 import HistorySearch from "./components/search/HistorySearch";
 import {Alert, AlertTitle} from "@material-ui/lab";
