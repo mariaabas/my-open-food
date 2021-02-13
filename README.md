@@ -1,12 +1,12 @@
 # my-open-food
-Simple pagina web con react.js APP con API JSON de OpenFoodFacts,
+The first project to learn using React.js with and API JSON OpenFoodFacts. 
 
-## Execución
+## Execution:
 
-Para la execucción del proyecto es necesario utilizar primero las comandas
+For the execution of the project is necessary to install node.js and after that, use the following command, to install all libraries:
  `npm install`
 
-y seguidamente
+For the started the project you need to use the following command: 
 `npm start`
 
 
