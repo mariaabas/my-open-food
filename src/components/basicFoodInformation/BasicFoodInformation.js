@@ -3,7 +3,6 @@ import {InputLabel, FormGroup, Typography } from "@material-ui/core";
 
 function BasicFoodInformation(props) {
 
-
     const productNameLabel = "Product Name";
     const brandLabel = "Brand"
 

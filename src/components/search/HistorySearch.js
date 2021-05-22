@@ -1,20 +1,11 @@
 import React from "react";
-import {GridList, GridListTile, GridListTileBar, makeStyles } from "@material-ui/core";
+import {GridList, GridListTile, GridListTileBar } from "@material-ui/core";
+import { useStylesHistorySearch} from "./styles";
 
-
-const useStyles = makeStyles((theme) => ({
-    gridList: {
-        flexWrap: 'nowrap',
-        transform: 'translateZ(0)',
-    },
-    icon: {
-        color: 'rgba(255, 255, 255, 0.54)',
-    },
-}));
 
 function HistorySearch(props) {
 
-    const classes = useStyles();
+    const classes = useStylesHistorySearch();
 
     return (
         <div>

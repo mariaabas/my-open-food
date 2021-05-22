@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Grid }  from '@material-ui/core';
-import CardFood from "./components/food/CardFood";
+import CardFood from "./components/cardFood/CardFood";
 import HistorySearch from "./components/search/HistorySearch";
 import {Alert, AlertTitle} from "@material-ui/lab";
 import AppBarFood from "./components/appBar/AppBarFood";
